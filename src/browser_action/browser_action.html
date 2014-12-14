@@ -2,12 +2,15 @@
 <script type="text/javascript" src="../../js/jq.js"></script>
 <script type="text/javascript" src="../../js/loader.js"></script>
 <script type="text/javascript" src="../../js/searcher.js"></script>
+<script type="text/javascript" src="../../js/bs.js"></script>
+<link href="../../js/bs.css" rel="stylesheet">
 <style type="text/css">
 	#mainPopup {
 		padding: 10px;
-		height: 300px;
-		width: 500px;
+		height: 600px;
+		width: 600px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+		overflow-y: scroll;
 	}
 	h1 {
 		font-size: 2em;
@@ -15,10 +18,14 @@
 </style>
 
 <div id="mainPopup">
-<input type="text" id="searchTerm" /><br>
-<table id="bookTable">
+	<div class="container">
+<input type="text" class="form-control" id="searchTerm" placeholder="Search Books..."/><br>
+<div class="well">
+<table id="bookTable" class="table table-condensed table-striped table-hover">
 	<div id="loader">loading...</div>
 
 </table>
+</div>
+</div>
 </div>
 
